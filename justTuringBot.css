@@ -1,0 +1,487 @@
+/* 5 Turing Machine! */
+
+.turing {
+    display: flex;
+    flex-direction: row;
+    height: 405px;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* head details */
+
+.headT {
+    position: relative; 
+    width: 220px;
+    height: 220px;
+    border: solid 30px black;
+    background-color: transparent;
+    border-radius: 50px;
+    left: 35x;
+    order: 0;
+}
+
+.eyeLeft {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: solid 20px black;
+    background-color: white;
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+}
+
+#leftPupil {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: black;
+    top: 10px;
+    left: 10px;
+}
+
+.eyeRight {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: solid 20px black;
+    background-color: transparent;
+    border-radius: 20px;
+    top: 10px;
+    right: 10px;
+}
+
+#rightPupil {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: black;
+    top: 10px;
+    left: 10px;
+}
+
+.mouth {
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    border: 20px solid black;
+    background-color: white;
+    border-radius: 15px;
+    top: 115px;
+    left: 44px;
+
+  }
+
+  .cpu {
+      position: relative;
+      width: 303px;
+      height: 65px;
+      border: 30px solid black;
+      background-color: transparent;
+      border-radius: 20px;
+      top: 240px;
+      left: -73px;
+  }
+
+/* gearT1 */
+
+.gearT1 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: transparent;
+    top: -12px;
+    left: -11px;
+    animation-name: spinT1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0px;
+    margin: 0px;
+}
+
+.toothT1{
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: black;
+    top: 13px;
+    left: 40.5px;
+    z-index: 1;
+}
+
+#toothOneT1 {
+    
+}
+
+#toothTwoT1 {
+    transform: rotate(45deg);
+}
+
+#toothThreeT1 {
+    transform: rotate(90deg);
+}
+
+#toothFourT1 {
+    transform: rotate(135deg);
+    
+}
+
+.baseT1 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50px;
+    border-radius: px;
+    top: 19px;
+    left: 19px;
+    z-index: 2;
+}
+
+.holeT1 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25px;
+    top: -20.4px;
+    left: 31.5px;
+    z-index: 3;
+
+}
+
+@keyframes spinT1 {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+/* gearT2 */
+
+.gearT2 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: transparent;
+    top: -12px;
+    left: 48px;
+    animation-name: spinT2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0px;
+    margin: 0px;
+}
+
+.toothT2{
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: black;
+    top: 13px;
+    left: 40.5px;
+    z-index: 1;
+}
+
+#toothOneT2 {
+    transform: rotate(22.5deg);
+}
+
+#toothTwoT2 {
+    transform: rotate(67.5deg);
+}
+
+#toothThreeT2 {
+    transform: rotate(112.5deg);
+}
+
+#toothFourT2 {
+    transform: rotate(157.5deg);
+    
+}
+
+.baseT2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50px;
+    border-radius: px;
+    top: 19px;
+    left: 19px;
+    z-index: 2;
+}
+
+.holeT2 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25px;
+    top: -20.4px;
+    left: 31.5px;
+    z-index: 3;
+
+}
+
+@keyframes spinT2 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* gearT3 */
+
+.gearT3 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: transparent;
+    top: -12px;
+    left: 107px;
+    animation-name: spinT3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0px;
+    margin: 0px;
+}
+
+.toothT3{
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: black;
+    top: 13px;
+    left: 40.5px;
+    z-index: 1;
+}
+
+#toothOneT3 {
+}
+
+#toothTwoT3 {
+    transform: rotate(45deg);
+}
+
+#toothThreeT3 {
+    transform: rotate(90deg);
+}
+
+#toothFourT3 {
+    transform: rotate(135deg);
+    
+}
+
+.baseT3 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50px;
+    border-radius: px;
+    top: 19px;
+    left: 19px;
+    z-index: 2;
+}
+
+.holeT3 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25px;
+    top: -20.4px;
+    left: 31.5px;
+    z-index: 3;
+
+}
+
+@keyframes spinT3 {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+/* gearT4 */
+
+.gearT4 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: transparent;
+    top: -12px;
+    left: 166px;
+    animation-name: spinT4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0px;
+    margin: 0px;
+}
+
+.toothT4{
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: black;
+    top: 13px;
+    left: 40.5px;
+    z-index: 1;
+}
+
+#toothOneT4 {
+    transform: rotate(22.5deg);
+}
+
+#toothTwoT4 {
+    transform: rotate(67.5deg);
+}
+
+#toothThreeT4 {
+    transform: rotate(112.5deg);
+}
+
+#toothFourT4 {
+    transform: rotate(157.5deg);
+    
+}
+
+.baseT4 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50px;
+    border-radius: px;
+    top: 19px;
+    left: 19px;
+    z-index: 2;
+}
+
+.holeT4 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25px;
+    top: -20.4px;
+    left: 31.5px;
+    z-index: 3;
+
+}
+
+@keyframes spinT4 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/*  gearT5 */
+
+.gearT5 {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: transparent;
+    top: -12px;
+    left: 225px;
+    animation-name: spinT5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0px;
+    margin: 0px;
+}
+
+.toothT5{
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: black;
+    top: 13px;
+    left: 40.5px;
+    z-index: 1;
+}
+
+#toothOneT5 {
+}
+
+#toothTwoT5 {
+    transform: rotate(45deg);
+}
+
+#toothThreeT5 {
+    transform: rotate(90deg);
+}
+
+#toothFourT5 {
+    transform: rotate(135deg);
+    
+}
+
+.baseT5 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50px;
+    border-radius: px;
+    top: 19px;
+    left: 19px;
+    z-index: 2;
+}
+
+.holeT5 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25px;
+    top: -20.4px;
+    left: 31.5px;
+    z-index: 3;
+
+}
+
+@keyframes spinT5 {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
